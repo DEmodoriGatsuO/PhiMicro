@@ -1,4 +1,4 @@
-# Python関連
+# Python related
 __pycache__/
 *.py[cod]
 *$py.class
@@ -22,43 +22,64 @@ var/
 .installed.cfg
 *.egg
 
-# モデルファイル
+# Model files - keep directory but exclude files
 models/*.gguf
 models/*.bin
 models/*.pt
 models/*.ggml
+models/*.safetensors
+!models/.gitkeep
 
-# Deta Space関連
-.space/
-.deta/
+# Log files - keep directory but exclude files
+logs/*
+!logs/.gitkeep
 
-# エディタ関連
+# Replit related
+.replit.backup
+.breakpoints
+.cache/
+.config/
+.upm/
+.pythonlibs/
+
+# Editor related
 .idea/
 .vscode/
 *.swp
 *.swo
 *~
+*.sublime-workspace
+*.sublime-project
 
-# OS関連
+# OS related
 .DS_Store
 Thumbs.db
+.directory
+desktop.ini
 
-# 環境設定
+# Environment settings
 .env
 .env.local
 .env.*.local
+.env.development
+.env.test
+.env.production
 
-# ログファイル
-*.log
-logs/
-
-# キャッシュディレクトリ
-.cache/
+# Cache directories
 __pycache__/
+.pytest_cache/
+.coverage
+htmlcov/
 
-# 一時ファイル
+# Temporary files
 tmp/
 temp/
 
-# 仮想環境
+# Virtual environments
 .venv/
+.python-version
+pyvenv.cfg
+
+# Deployment related
+.vercel
+.netlify

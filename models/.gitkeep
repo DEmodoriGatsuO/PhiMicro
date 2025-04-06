@@ -1,0 +1,7 @@
+# models/.gitkeep
+# This file exists to keep the empty models directory in Git
+# The model files themselves are excluded via .gitignore
+
+# logs/.gitkeep
+# This file exists to keep the empty logs directory in Git
+# The log files themselves are excluded via .gitignore
